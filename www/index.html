@@ -116,8 +116,9 @@
        
 
         function creatTickitFn() {
-            alert("Insert test");
+           
             var apiKey = $('#apiKey').val();
+            alert("Insert test" + apiKey);
             var url = 'http://dev.tickittaskit.com/flippadoo/mobile/tickitService/' + apiKey + '/createTickit';
             $("#createTickit").attr("action", url);
 
