@@ -11,10 +11,13 @@
         var lc;
         //PhoneGap Ready variable
         var pgr = false;
+        var AlertMess = false;
 
         function onBodyLoad() {
             //During testing, Let me know we got this far
-            alert("onBodyLoad");
+            if (AlertMess == true) {
+                alert("onBodyLoad");
+            }
             //Add the PhoneGap deviceready event listener
             document.addEventListener("deviceready", onDeviceReady, false);
         }
@@ -22,7 +25,9 @@
         function onDeviceReady() {
             //During testing, Let me know PhoneGap actually
             // initialized
-            alert("onDeviceReady");
+            if (AlertMess == true) {
+                alert("onDeviceReady");
+            }
             //Get a handle we'll use to adjust the accelerometer
             //content
             lc = document.getElementById("locationInfo");
@@ -32,7 +37,11 @@
         }
 
         function getLocation() {
-            alert("getLocation");
+            if (AlertMess == true) {
+                if (AlertMess == true) {
+                    alert("getLocation");
+                }
+            }
             if (pgr == true) {
                 var locOptions = {
                     timeout: 5000,
@@ -44,12 +53,16 @@
                 lc.innerHTML = "Reading location...";
 
             } else {
-                alert("Please wait,\nPhoneGap is not ready.");
+                if (AlertMess == true) {
+                    alert("Please wait,\nPhoneGap is not ready.");
+                }
             }
         }
 
         function onLocationSuccess(loc) {
-            alert("onLocationSuccess");
+            if (AlertMess == true) {
+                alert("onLocationSuccess");
+            }
             //We received something from the API, so first get the
             // timestamp in a date object so we can work with it
             var d = new Date(loc.timestamp);
