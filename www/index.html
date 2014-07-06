@@ -116,6 +116,7 @@
        
 
         function creatTickitFn() {
+            alert("Insert test");
             var apiKey = $('#apiKey').val();
             var url = 'http://dev.tickittaskit.com/flippadoo/mobile/tickitService/' + apiKey + '/createTickit';
             $("#createTickit").attr("action", url);
@@ -137,9 +138,9 @@
     </p>
       <div class="wrapper">
     <div style="width: 200px; height: 100px; margin: 30px auto; padding: 0 20px; background: #f1f1eb; border: 1px solid #0071BC; color: #0071BC; font-size: 15px; -moz-box-shadow:   0 0 10px 0 rgba(0,0,0,0.28); box-shadow:  0 0 10px 0 rgba(0,0,0,0.28); -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px;">
-        <form name="createTickit" id ="createTickit" action="http://208.75.75.92:8080/flippadoo/mobile/tickitService/createTickit" enctype="multipart/form-data" method="post">
+        <form name="createTickit" id ="createTickit" action="http://dev.tickittaskit.com/flippadoo/mobile/tickitService/createTickit" enctype="multipart/form-data" method="post">
             <div class="header"></div>
-            <h2><a href="http://208.75.75.92:8080/flippadoo/app/grid/tickitDetails">Whami from Home v1.0</a> </h2>
+              Whami Insert </h2>
             <dl>
                  <dd>
                     <!-- Optional fields -->
@@ -153,18 +154,18 @@
                     <input type="hidden" name="parentId" value="123456804">
                     <input type="hidden" name="recipient" value="christopherhealy@outlook.com">
                     <input type="hidden" name="subject" value="Whami">
- 		    <SCRIPT type="text/javascript">
- 		        document.write("<input type='hidden' name='msgBody' value='Local Whami time is: " + getDateTime() + "'>")
+ 		            <SCRIPT type="text/javascript">
+ 		               document.write("<input type='hidden' name='msgBody' value='Local Whami time is: " + getDateTime() + "'>")
                     </SCRIPT>
                     <input type="hidden" name="startDate" value="">
                     <input type="hidden" name="endDate" value="">
                     <!-- substitute this with the actual GPS (this is Chris's home) -->
                     <!-- gps is an array that requires two values, separated by a semi-colon -->
                     <input type="hidden" name="gps" value="45.3875078;-75.7548862">
-		    <input type="hidden" name="tickitFile" value="">
+		            <input type="hidden" name="tickitFile" value="">
                 </dd>               
                
-            <dl>
+            </dl>
             <div class="buttonBlock">
                 <button class="submitBTN" onclick="creatTickitFn();">Whami</button>           </div>
 	     
