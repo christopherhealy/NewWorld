@@ -20,7 +20,7 @@ src="phonegap-3.3.0.js"></script>
 
     function onBodyLoad() {
         //During testing, Let me know we got this far
-        if )TestingAlert==true){
+        if (TestingAlert==true){
             alert("onBodyLoad - got this far");
         }
         //Add the PhoneGap deviceready event listener
@@ -31,7 +31,7 @@ src="phonegap-3.3.0.js"></script>
     function onDeviceReady() {
         //During testing, Let me know PhoneGap actually
         // initialized
-        if )TestingAlert==true){
+        if (TestingAlert==true){
             alert("onDeviceReady");
         }
         //Get a handle we'll use to adjust the accelerometer
@@ -42,7 +42,7 @@ src="phonegap-3.3.0.js"></script>
         pgr = true;
     }
     function getLocation() {
-        if )TestingAlert==true){
+        if (TestingAlert==true){
             alert("getLocation");
         }
         if (pgr == true) {
@@ -61,7 +61,7 @@ src="phonegap-3.3.0.js"></script>
     }
 
     function onGeolocationSuccess(loc) {
-        if )TestingAlert==true){
+        if (TestingAlert==true){
             alert("onLocationSuccess");
         }
         //We received something from the API, so first get the
