@@ -109,6 +109,11 @@
             return dateTime;
         }
 
+        function TestMe(e) {
+            var apiKey = $('#apiKey').val();
+            alert("Testing insertion into TT DB for key " + apiKey);
+        }
+
         function creatTickitFn() {
             var apiKey = $('#apiKey').val();
             var url = 'http://dev.tickittaskit.com/flippadoo/mobile/tickitService/' + apiKey + '/createTickit';
@@ -135,7 +140,7 @@
  <SCRIPT type="text/javascript">
      document.write("<input type='hidden' name='msgBody' value='Local iPhone Whami time is: " + getDateTime() + "'>")
  </SCRIPT>
-    <input type="button" name="Insert" value="Whami Test" onclick="creatTickitFn();">
+    <input type="button" name="Insert" value="Whami DB Insert" onclick="TestMe(this);">
 </form>
   </body>
 </html>
