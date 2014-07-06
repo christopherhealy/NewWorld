@@ -133,14 +133,15 @@
     <p id="locationInfo">
       We want to insert these into our DB.
     </p>
-      <form name="createTickit" id ="createTickit" action="http://dev.tickittaskit.com/flippadoo/mobile/tickitService/createTickit" enctype="multipart/form-data" method="post">
+      <form name="createTickit" id ="createTickit"  method="post">
  <input type="hidden" name="apiKey" id="apiKey" value="355901361" >
  <input type="hidden" name="ownerId" value="1">
  <input type="hidden" name="subject" value="Whami Test">
  <SCRIPT type="text/javascript">
      document.write("<input type='hidden' name='msgBody' value='Local iPhone Whami time is: " + getDateTime() + "'>")
  </SCRIPT>
-    <input type="button" name="Insert" value="Whami DB Insert" onclick="TestMe(this);">
+    
 </form>
+      <button name="Insert" value="Whami DB Insert" onclick="TestMe(this);" />
   </body>
 </html>
