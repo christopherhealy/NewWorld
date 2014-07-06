@@ -142,8 +142,8 @@
         <form name="createTickit" id ="createTickit" action="http://dev.tickittaskit.com/flippadoo/mobile/tickitService/createTickit" enctype="multipart/form-data" method="post">
             <div class="header"></div>
               Whami Insert </h2>
-            <dl>
-                 <dd>
+            
+                 <div>
                     <!-- Optional fields -->
                     <!-- input type="hidden" name="tickitCustomId" value="" -->
                     <input type="hidden" name="apiKey" id="apiKey" value="355901361" >                    
@@ -164,13 +164,14 @@
                     <!-- gps is an array that requires two values, separated by a semi-colon -->
                     <input type="hidden" name="gps" value="45.3875078;-75.7548862">
 		            <input type="hidden" name="tickitFile" value="">
-                </dd>               
+                </div>               
                
-            </dl>
+            
             <div class="buttonBlock">
                 <button class="submitBTN" onclick="creatTickitFn();">Whami</button>           </div>	     
         </form>
+        </div>
     </div>
-</div>
+
   </body>
 </html>
