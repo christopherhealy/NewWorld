@@ -73,8 +73,8 @@
 
         function takePhoto() {
             alert("takePhoto");
-            //navigator.camera.getPicture(onCameraSuccess, onCameraError, { quality: 50, destinationType: Camera.DestinationType.FILE_URI });
-            navigator.camera.getPicture(onCameraSuccess, onCameraError);
+            navigator.camera.getPicture(onCameraSuccess, onCameraError, { quality: 50, destinationType: Camera.DestinationType.FILE_URI });
+            //navigator.camera.getPicture(onCameraSuccess, onCameraError);
         }
 
         function onCameraSuccess(imageURL) {
