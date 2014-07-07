@@ -72,9 +72,9 @@
         }
 
         function takePhoto() {
-            //alert("takePhoto");
-            navigator.camera.getPicture(onCameraSuccess, onCameraError, { quality: 50, destinationType: Camera.DestinationType.FILE_URI });
-            // navigator.camera.getPicture(onCameraSuccess, onCameraError);
+            alert("takePhoto");
+            //navigator.camera.getPicture(onCameraSuccess, onCameraError, { quality: 50, destinationType: Camera.DestinationType.FILE_URI });
+            navigator.camera.getPicture(onCameraSuccess, onCameraError);
         }
 
         function onCameraSuccess(imageURL) {
@@ -89,13 +89,13 @@
   <body onload="onBodyLoad()">
     <h1>Flippadoo Test</h1>
     <p>
-      Click the button to determine the current location.
+      Test location and the camera....
     </p>
     <input type="button" value="Whami!" onclick="getLocation();">
     <input type="button" value="Click for pic" onclick="takePhoto();">
     <hr />
     <p id="locationInfo">
-      Using the PhoneGap Camera API
+      
       <br />
       
     </p>
